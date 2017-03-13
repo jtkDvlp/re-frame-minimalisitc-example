@@ -34,4 +34,12 @@
                 :main re-frame-minimalistic-example.main
                 :asset-path "js/out"
                 :output-to "resources/public/js/main.js"
-                :output-dir "resources/public/js/out"}}]})
+                :output-dir "resources/public/js/out"}}
+
+    {:id "min"
+     :source-paths ["src"]
+     :jar true
+     :compiler {:optimizations :advanced
+                :pretty-print false
+                :main re-frame-minimalistic-example.main
+                :output-to "resources/public/js/main.js"}}]})
